@@ -22,8 +22,9 @@ body {
   color: #222222;
 }
 
-/* Header */
-.headerContainer {
+/*   Header Content START  */
+
+.header-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 110px 110px 110px 110px 110px 110px 110px 1fr 1fr;
   grid-template-rows: 145px 145px;
@@ -33,35 +34,96 @@ body {
   background-color: #8D0F23;
 }
 
-.headerLogo {
+.header-logo {
   grid-area: b;
   background-color: none;
   align-self: end;
   justify-self: end;
   padding-right: 40px;
 }
-.headerTagline {
+.header-tagline {
   grid-area: c;
   background-color: none;
   align-self: end;
   letter-spacing: .75px;
 }
-.headerSubline {
+.header-subline {
   grid-area: d;
   background-color: none;
   margin-top: 10px;
   letter-spacing: .5px;
 }
 
-.headerTitle {
+.header-title {
   color: white;
   line-height: 36px;
   font-size: 28px;
   font-weight: 600;
 }
 
-.headerSubtitle {
+.header-subtitle {
   color: white;
   font-size: 22px;
   font-weight: 100;
 }
+
+/*   Header Content END  */
+
+/*   Featured Product Content START  */
+.featured-product-container {
+}
+
+.featured-product-container {
+}
+/*   Featured Product Content END  */
+
+
+
+/*   Product Stage START  */
+.product-stage-container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 300px 1fr 300px 2fr;
+  grid-template-rows: 50px 400px 50px 400px 50px;
+  grid-template-areas:
+  "m m m m m"
+  "h i j k l"
+  "n n n n n"
+  "o p q r s"
+  "t t t t t";
+  background-color: #f3f3f3;
+}
+
+.subheader-text-line {
+  grid-area: m;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #222222;
+}
+
+
+
+.card-container-left, .card-container-right{
+  height:100%;
+  border-radius: 8px;
+}
+.card-container-left {
+  grid-area: i;
+  background-color: #6B9080;
+}
+
+.card-container-right {
+  grid-area: k;
+  background-color: #A4C3B2;
+}
+.row-2A {
+  grid-area: p;
+  background-color: #A4C3B2;
+}
+.row-2B {
+  grid-area: r;
+  background-color: #A4C3B2;
+}
+
+/*   Product Stage END  */
