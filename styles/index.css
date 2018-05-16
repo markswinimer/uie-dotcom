@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Source+Sans+Pro:200,300,400,600,700,900');
 
-/* NEW UIE DOT COM LANDING */
+/*
+
+font-family: 'Source Sans Pro', sans-serif;
+300 -> 900
+font-family: 'Montserrat', sans-serif;
+300 -> 900
+
+*/
+
 
 * {
   padding: 0;
@@ -8,4 +17,51 @@
 
 body {
   background-color: #f3f3f3;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: #222222;
+}
+
+/* Header */
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 110px 110px 110px 110px 110px 110px 110px 1fr 1fr;
+  grid-template-rows: 145px 145px;
+  grid-template-areas:
+  "a a a b b c c c c c e e"
+  "a a a x x d d d d d e e";
+  background-color: #8D0F23;
+}
+
+.headerLogo {
+  grid-area: b;
+  background-color: none;
+  align-self: end;
+  justify-self: end;
+  padding-right: 40px;
+}
+.headerTagline {
+  grid-area: c;
+  background-color: none;
+  align-self: end;
+  letter-spacing: .75px;
+}
+.headerSubline {
+  grid-area: d;
+  background-color: none;
+  margin-top: 10px;
+  letter-spacing: .5px;
+}
+
+.headerTitle {
+  color: white;
+  line-height: 36px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.headerSubtitle {
+  color: white;
+  font-size: 22px;
+  font-weight: 100;
 }
