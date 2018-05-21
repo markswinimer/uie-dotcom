@@ -22,6 +22,27 @@ body {
   color: #222222;
 }
 
+p {
+  color: #222222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+h3 {
+  color: #222222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+h4 {
+  color: #222222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 /*   Header Content START  */
 
 .header-container {
@@ -81,16 +102,19 @@ body {
 
 /*   Product Stage START  */
 .product-stage-container {
-  padding-top: 20px;
   display: grid;
-  grid-template-columns: 2fr 300px 1fr 300px 2fr;
-  grid-template-rows: 50px 400px 50px 400px 50px;
+  grid-template-columns: 2fr 400px 50px 400px 2fr;
+  grid-template-rows: 50px 500px 50px 500px 50px 500px 50px 250px 50px;
   grid-template-areas:
   "m m m m m"
   "h i j k l"
   "n n n n n"
   "o p q r s"
-  "t t t t t";
+  "t t t t t"
+  "y u v w x"
+  "3 3 3 3 3"
+  "1 z z z 2"
+  "4 4 4 4 4";
   background-color: #f3f3f3;
 }
 
@@ -107,7 +131,11 @@ body {
 .card-container-left, .card-container-right{
   height:100%;
   border-radius: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
 }
+
 .card-container-left {
   grid-area: i;
   background-color: #6B9080;
@@ -125,5 +153,69 @@ body {
   grid-area: r;
   background-color: #A4C3B2;
 }
+.row-3A {
+  grid-area: u;
+  background-color: #A4C3B2;
+}
+.row-3B {
+  grid-area: w;
+  background-color: #A4C3B2;
+}
+
+/* IMAGE */
+.card-image-container {
+  border-radius: 8px 8px 0 0;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+}
+.card-image {
+  filter: contrast(85%);
+  filter: saturate(55%);
+  /* filter:brightness(110%); */
+  width: 400px;
+}
+
+/* TEXT */
+.callout-container {
+  background-color: #ffffff;
+  padding: .75em 1em;
+  border-bottom: 3px solid #f3f3f3;
+}
+
+.content-container {
+  background-color: #ffffff;
+  padding: .75em 1em;
+  flex: auto;
+}
+
+/* CTA */
+.cta-container {
+  height: 46px;
+  width: 400px;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 0 0 8px 8px;
+  background-color: #8D0F23;
+}
+
+.cta-button {
+  color: #ffffff;
+}
+
+
+/* NEWSLETTER */
+.newsletter-signup-container {
+  grid-area: z;
+  padding: 20px;
+  background-color: #8B0E25;
+  color: #ffffff;
+  border-radius: 8px 8px 8px 8px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
 
 /*   Product Stage END  */
