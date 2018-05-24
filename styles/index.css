@@ -138,12 +138,15 @@ header {
 
 /*   Header Content END  */
 
+
 /*   Featured Product Content START  */
+
 .featured-product-container {
 }
 
 .featured-product-container {
 }
+
 /*   Featured Product Content END  */
 
 
@@ -151,29 +154,15 @@ header {
 /*   Product Stage START  */
 .product-stage-container {
   display: grid;
-  grid-template-columns: 2fr 400px 50px 400px 2fr;
-  grid-template-rows: 50px 500px 50px 500px 50px 500px 50px auto 50px;
-  grid-template-areas:
-  "m m m m m"
-  "h i j k l"
-  "n n n n n"
-  "o p q r s"
-  "t t t t t"
-  "y u v w x"
-  "3 3 3 3 3"
-  "1 z z z 2"
-  "4 4 4 4 4";
+  width: 850px;
+  margin: auto;
+  grid-row-gap: 40px;
+  grid-template-columns: 400px 50px 400px;
+  grid-template-rows: repeat(3, auto);
   background-color: #f3f3f3;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
-
-.subheader-text-line {
-  grid-area: m;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  color: #222222;
-}
-
 
 .card-container-left, .card-container-right{
   height:100%;
@@ -183,29 +172,34 @@ header {
   display: flex;
 }
 
-.card-container-left {
-  grid-area: i;
-  background-color: #6B9080;
-}
-
-.card-container-right {
-  grid-area: k;
+#card-1 {
+  grid-column: 1 / 2;
+  grid-row: 1;
   background-color: #A4C3B2;
 }
-.row-2A {
-  grid-area: p;
+#card-2 {
+  grid-column: 3 / 4;
+  grid-row: 1;
   background-color: #A4C3B2;
 }
-.row-2B {
-  grid-area: r;
+#card-3 {
+  grid-column: 1 / 2;
+  grid-row: 2;
   background-color: #A4C3B2;
 }
-.row-3A {
-  grid-area: u;
+#card-4 {
+  grid-column: 3 / 4;
+  grid-row: 2;
   background-color: #A4C3B2;
 }
-.row-3B {
-  grid-area: w;
+#card-5 {
+  grid-column: 1 / 2;
+  grid-row: 3;
+  background-color: #A4C3B2;
+}
+#card-6 {
+  grid-column: 3 / 4;
+  grid-row: 3;
   background-color: #A4C3B2;
 }
 
@@ -219,7 +213,6 @@ header {
 .card-image {
   filter: contrast(85%);
   filter: saturate(55%);
-  /* filter:brightness(110%); */
   width: 400px;
 }
 
@@ -254,18 +247,22 @@ header {
 
 /* NEWSLETTER */
 .newsletter-signup-container {
-  grid-area: z;
-  padding: 20px;
   background-color: #8B0E25;
   color: #ffffff;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
   text-align: center;
   font-size: 22px;
   font-weight: 300;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 350px;
+  width: 850px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.newsletter-padding {
+  padding: 20px;
 }
 
 
@@ -406,8 +403,6 @@ div.footer-text-right {
 .talk-copyright {
   color: #555555;
 }
-
-
 
 
 .main-footer {
