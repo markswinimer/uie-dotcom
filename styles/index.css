@@ -145,13 +145,16 @@ header {
 /*   Product Stage START  */
 .product-stage-container {
   display: grid;
-  width: 850px;
+  max-width: 850px;
   margin: auto;
   grid-row-gap: 40px;
-  grid-template-columns: 400px 50px 400px;
+  grid-template-columns: minmax(325px, 400px) minmax(25px, 50px) minmax(325px, 400px);
   grid-template-rows: repeat(3, auto);
   background-color: #f3f3f3;
   padding-top: 40px;
+  margin:auto;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 40px;
 }
 
@@ -200,14 +203,14 @@ header {
 /* IMAGE */
 .card-image-container {
   border-radius: 8px 8px 0 0;
-  width: 400px;
-  height: 150px;
+  width: 100%;
+  max-height: 150px;
   overflow: hidden;
 }
 .card-image-container img {
   filter: contrast(85%);
   filter: saturate(55%);
-  width: 400px;
+  width: 100%;
 }
 
 /* TEXT */
@@ -226,7 +229,7 @@ header {
 /* CTA */
 .cta-container {
   height: 46px;
-  width: 400px;
+  width: 100%;
   text-align: center;
   line-height: 46px;
   border-radius: 0 0 8px 8px;
@@ -524,6 +527,271 @@ hr {
 }
 /*   Featured Product Content END  */
 
+@media only screen and (max-width: 440px) {
+
+  /* Header */
+
+  header {
+    background-color: #8D0F23;
+    width: 100%;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  .header-logo {
+    background-color: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .header-tagline {
+    background-color: none;
+    letter-spacing: .75px;
+    color: white;
+    line-height: 36px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .header-subline {
+    background-color: none;
+    margin-top: 0px;
+    letter-spacing: .5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 40px;
+  }
+
+  /* Featured Section */
+
+  /* Card Content */
+
+  .product-stage-container {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-row-gap: 40px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    background-color: #f3f3f3;
+    padding-top: 40px;
+    padding:0;
+    margin-bottom: 40px;
+  }
+
+  .product-stage-margin {
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-container-left, .card-container-right{
+    height:100%;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+  }
+
+  /* IMAGE */
+  .card-image-container {
+    border-radius: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
+  }
+  .card-image-container img {
+    filter: contrast(85%);
+    filter: saturate(55%);
+    width: 100%;
+  }
+
+  /* TEXT */
+  .callout-container {
+    background-color: #ffffff;
+    padding: .75em 1em;
+    border-bottom: 3px solid #f3f3f3;
+  }
+
+  .content-container {
+    background-color: #ffffff;
+    padding: .75em 1em;
+    flex: auto;
+  }
+
+  /* CTA */
+  .cta-container {
+    max-height: 46px;
+    width: 100%;
+    text-align: center;
+    line-height: auto;
+    border-radius: 0;
+    background-color: #8D0F23;
+  }
+
+  .cta-button {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+
+
+  #card-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #card-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #card-3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #card-4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  #card-5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  #card-6 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+
+  /* Newsletter Section */
+
+  .newsletter-signup-container {
+    background-color: #8B0E25;
+    color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.55);
+  }
+
+  .newsletter-description {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    width: auto;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .newsletter-padding {
+    padding: 20px 20px;
+  }
+
+
+  .email-input-fields {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    padding: 0;
+  }
+
+  .newsletter-choices {
+    flex-grow: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+    margin:auto;
+  }
+
+  .choices-01 {
+    width: auto;
+  }
+
+  .choices-02 {
+    width: auto;
+    display: none;
+  }
+
+  #firstName, #lastName, #emailAddress {
+    border: 2px solid #ddd;
+    height: 30px;
+    width: 100%;
+    color: #222222;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+
+
+  .sign-up-button {
+    color: red;
+  }
+
+  input[type=submit] {
+    color: #222222;
+    background-color: #f3f3f3;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+    float: none;
+    margin: auto;
+    display: inline-block;
+  }
+  input[type=checkbox] {
+    color: #222222;
+    background-color: #f3f3f3;
+    margin-right: 5px;
+  }
+  .privacy-statement {
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .newsletter-checkbox {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+
+
+
+
 @media only screen and (max-width: 800px) {
 
   /* Header */
@@ -536,7 +804,7 @@ hr {
   .header-container {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 500px;
     margin: auto;
   }
 
@@ -578,9 +846,9 @@ hr {
   .product-stage-container {
     display: grid;
     margin: auto;
-    width: 400px;
-    grid-row-gap: 40px;
-    grid-template-columns: 400px;
+    max-width: 500px;
+    grid-row-gap: 60px;
+    grid-template-columns: minmax(325px, 500px);
     grid-template-rows: repeat(6, auto);
     background-color: #f3f3f3;
     padding-top: 40px;
@@ -589,6 +857,17 @@ hr {
   .product-stage-margin {
     margin: auto;
     width: auto;
+  }
+
+  .card-container-left, .card-container-right{
+    height:100%;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
   }
 
   #card-1 {
