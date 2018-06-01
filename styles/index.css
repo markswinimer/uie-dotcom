@@ -24,7 +24,7 @@ a {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #fbfafa;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.2rem;
   color: #222222;
@@ -156,7 +156,7 @@ header {
   grid-row-gap: 40px;
   grid-template-columns: minmax(325px, 400px) minmax(25px, 50px) minmax(325px, 400px);
   grid-template-rows: repeat(3, auto);
-  background-color: #f3f3f3;
+  background-color: #fbfafa;
   padding-top: 40px;
   margin:auto;
   padding-left: 50px;
@@ -223,7 +223,7 @@ header {
 .callout-container {
   background-color: #ffffff;
   padding: .75em 1em;
-  border-bottom: 3px solid #f3f3f3;
+  border-bottom: 3px solid #fbfafa;
 }
 
 .content-container {
@@ -334,7 +334,7 @@ header {
 
 input[type=submit] {
   color: #222222;
-  background-color: #f3f3f3;
+  background-color: #fbfafa;
   float: right;
   border: none;
   height: 40px;
@@ -349,7 +349,7 @@ input[type=submit] {
 }
 input[type=checkbox] {
   color: #222222;
-  background-color: #f3f3f3;
+  background-color: #fbfafa;
   margin-right: 5px;
 }
 
@@ -533,6 +533,27 @@ hr {
 }
 /*   Featured Product Content END  */
 
+.dev-links {
+  color: white;
+  background-color: #850028;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 3px 0;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.dev-item {
+  flex-grow: 1;
+  color: white;
+}
+
+.dev-item a {
+  color: white;
+}
+
+
 @media only screen and (max-width: 440px) {
 
   /* Header */
@@ -587,7 +608,7 @@ hr {
     grid-row-gap: 40px;
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, auto);
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     padding-top: 40px;
     padding:0;
     margin-bottom: 40px;
@@ -626,7 +647,7 @@ hr {
   .callout-container {
     background-color: #ffffff;
     padding: .75em 1em;
-    border-bottom: 3px solid #f3f3f3;
+    border-bottom: 3px solid #fbfafa;
   }
 
   .content-container {
@@ -761,7 +782,7 @@ hr {
 
   input[type=submit] {
     color: #222222;
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     border: none;
     height: 40px;
     width: 100%;
@@ -778,7 +799,7 @@ hr {
   }
   input[type=checkbox] {
     color: #222222;
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     margin-right: 5px;
   }
   .privacy-statement {
@@ -856,7 +877,7 @@ hr {
     grid-row-gap: 60px;
     grid-template-columns: minmax(325px, 500px);
     grid-template-rows: repeat(6, auto);
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     padding-top: 40px;
     margin-bottom: 40px;
   }
@@ -984,7 +1005,7 @@ hr {
 
   input[type=submit] {
     color: #222222;
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     border: none;
     height: 40px;
     width: 100%;
@@ -1001,7 +1022,7 @@ hr {
   }
   input[type=checkbox] {
     color: #222222;
-    background-color: #f3f3f3;
+    background-color: #fbfafa;
     margin-right: 5px;
   }
   .privacy-statement {
@@ -1013,6 +1034,4 @@ hr {
     text-align: left;
     margin-bottom: 10px;
   }
-
-
 }
