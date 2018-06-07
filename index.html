@@ -74,6 +74,14 @@
         </div>
         <div class="content-container">
           <h4>Jared Live</h4>
+          <div id="tag4" class="tag-container">
+            <div class="tag">
+              Workshop
+            </div>
+            <div class="tag">
+              In Person
+            </div>
+          </div>
           <p>
             There’s no better way to start gaining that advantage than having Jared Spool engage with members of your organization. Jared will deliver specific strategic insights and tactical processes for your organization, live!
           </p>
@@ -98,12 +106,21 @@
         </div>
         <div class="content-container">
           <h4>UX Hiring MasterClass</h4>
+          <div id="tag1" class="tag-container">
+            <div class="tag">
+              Video
+            </div>
+            <div class="tag">
+              Video
+            </div>
+          </div>
           <p>
             Hiring is the most important responsibility of any design leader. Great Designers have the perfect mix of skills, knowledge, and experience to bring your organization’s design efforts to the next level. Overhaul your hiring process with 7 weeks worth of videos, resources, and live coaching in this UX hiring MasterClass.
           </p>
-        </div>
-        <div class="cta-container">
-          <a href="https://centercentre.learnsocially.com/">
+
+          </div>
+          <div class="cta-container">
+            <a href="https://centercentre.learnsocially.com/">
             <div class="cta-button">
               Design Your UX Hiring Process
             </div>
@@ -118,7 +135,15 @@
           <img src="https://asset.uie.com/uie-dot-com/index/aycl-resized.png"/>
         </div>
         <div class="callout-container">
-          <h3>Your team can bump up their UX skills on their schedule—whenever they want, wherever they are</h3>
+          <h3 style="margin-bottom: 15px;">Your team can bump up their UX skills on their schedule—whenever they want, wherever they are</h3>
+          <div id="tag5" class="tag-container">
+            <div class="tag">
+              Video
+            </div>
+            <div class="tag">
+              Online
+            </div>
+          </div>
         </div>
         <div class="content-container">
           <h4>UIE’s All You Can Learn Library</h4>
@@ -140,7 +165,15 @@
           <img src="https://asset.uie.com/uie-dot-com/index/playbook-resized.png"/>
         </div>
         <div class="callout-container">
-          <h3>Create a UX Strategy to match your organization’s unique challenges.</h3>
+          <h3 style="margin-bottom: 15px;">Create a UX Strategy to match your organization’s unique challenges.</h3>
+          <div id="tag2" class="tag-container">
+            <div class="tag">
+              Video
+            </div>
+            <div class="tag">
+              Online
+            </div>
+          </div>
         </div>
         <div class="content-container">
           <h4>UX Strategy Playbook</h4>
@@ -169,6 +202,14 @@
           <p>
             Imagine six incredible full-day, master-grade workshops led by top industry experts. You don’t have to imagine it, because you can be part of UI23. Come to Boston in November 2018 and learn UX skills and techniques you can apply immediately.
           </p>
+          <div id="tag6" class="tag-container">
+            <div class="tag">
+              Video
+            </div>
+            <div class="tag">
+              Online
+            </div>
+          </div>
         </div>
         <div class="cta-container">
           <a href="https://ui.uie.com/">
@@ -193,6 +234,14 @@
           <p>
             Imagine a user experience design school—built from the ground up—with the sole purpose of making you the UX designer everyone wants to hire. You’ll be industry ready, and prepared for the realities of a professional work environment.
           </p>
+          <div id="tag3" class="tag-container">
+            <div class="tag">
+              Video
+            </div>
+            <div class="tag">
+              Online
+            </div>
+          </div>
         </div>
         <div class="cta-container">
           <div class="cta-button">
@@ -313,9 +362,33 @@
       <div class="dev-item 2">DEV Links:</div>
       <div class="dev-item"><a href="https://new-uie.herokuapp.com/index.html">Design A</a></div>
       <div class="dev-item"><a href="https://new-uie.herokuapp.com/index-alt.html">Design B</a></div>
+      <div class="dev-item" onclick="toggleTagsON()">Tags ON</div>
+      <div class="dev-item"  onclick="toggleTagsOFF()">Tags OFF</div>
     </div>
 
     <!-- Footer END -->
+  <script>
+
+    function toggleTagsOFF() {
+      document.getElementById('tag1').style.cssText = 'display: none;';
+      document.getElementById('tag2').style.cssText = 'display: none;';
+      document.getElementById('tag3').style.cssText = 'display: none;';
+      document.getElementById('tag4').style.cssText = 'display: none;';
+      document.getElementById('tag5').style.cssText = 'display: none;';
+      document.getElementById('tag6').style.cssText = 'display: none;';
+    }
+
+    function toggleTagsON() {
+      document.getElementById('tag1').style.cssText = 'display: inline-flex;';
+      document.getElementById('tag2').style.cssText = 'display: inline-flex;';
+      document.getElementById('tag3').style.cssText = 'display: inline-flex;';
+      document.getElementById('tag4').style.cssText = 'display: inline-flex;';
+      document.getElementById('tag5').style.cssText = 'display: inline-flex;';
+      document.getElementById('tag6').style.cssText = 'display: inline-flex;';
+    }
+    
+    toggleTagsOFF();
+  </script>
 
   </body>
   </html>
