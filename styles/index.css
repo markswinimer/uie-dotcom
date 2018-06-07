@@ -554,6 +554,37 @@ hr {
   color: white;
 }
 
+.tag-container {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*
+.tag-container-hidden {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  display: none;
+} */
+
+.tag {
+  text-align: center;
+  color: #8F000A;
+  border: 1px solid #8F000A;
+  max-width: 100px;
+  margin-right: 10px;
+  font-size: 20px;
+  flex-grow: 1;
+  width: auto;
+  border-radius: 8px;
+}
+
 
 @media only screen and (max-width: 440px) {
 
