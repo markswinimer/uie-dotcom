@@ -126,6 +126,22 @@ header {
   clear: left;
   padding-left: 15.5rem;
 }
+
+.header-nav {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15.5rem;
+  padding-right: 10rem;
+}
+
+.header-nav p {
+  padding-right: 1rem;
+  color: white;
+  display: inline;
+}
 /* -------------------------------------------------- */
 
 /* Featured Product */
@@ -187,12 +203,12 @@ header {
   display: grid;
   max-width: 1000px;
   margin: auto;
-  grid-row-gap: 5rem;
-  grid-template-columns: minmax(325px, 470px) minmax(2.5rem, 5rem) minmax(325px, 470px);
+  grid-row-gap: 6rem;
+  grid-template-columns: minmax(325px, 470px) minmax(2.5rem, 6rem) minmax(325px, 470px);
   grid-template-rows: repeat(3, auto);
   background-color: #fbfafa;
   padding: 4rem 0;
-  margin:auto;
+  margin: auto;
 }
 
 .card-container-left, .card-container-right{
@@ -202,9 +218,9 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   display: flex;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
 }
 
 #card-1 {
@@ -269,7 +285,7 @@ header {
   width: 100%;
   text-align: center;
   line-height: 46px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 4px 4px;
   background-color: #8D0F23;
 }
 
@@ -287,6 +303,78 @@ header {
   border-radius: .5rem;
 }
 /* -------------------------------------------------- */
+
+/* Newsletter */
+.newsletter-container {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  padding: 0 4%;
+}
+.newsletter {
+  max-width: 100rem;
+  margin: auto;
+  height: auto;
+  border-radius: 4px;
+  padding: 3rem;
+  color: white;
+  background-color: #8D0F23;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+}
+
+.email-input-fields {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input#firstName {
+  margin: 0 2rem;
+}
+
+.email-input-fields input {
+  height: 4rem;
+  width: 100%;
+  max-width: 29rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #757575;
+  padding-left: .5rem;
+}
+
+.privacy-statement {
+  float: left;
+}
+
+.privacy-statement p {
+  letter-spacing: .1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.privacy-statement strong {
+  letter-spacing: .1rem;
+}
+
+.sign-up-button input[type=submit] {
+  color: #313131;
+  background-color: white;
+  float: right;
+  border: none;
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0 1.5rem;
+  float: right;
+}
+/* -------------------------------------------------- */
+
 
 /* Footer Links (white) */
 
@@ -328,7 +416,7 @@ hr {
   border-left: none;
   border-right: none;
   margin: 10px 0;
-  border-top: 1px solid #222222;
+  border-top: 1px solid #313131;
 }
 /* -------------------------------------------------- */
 
@@ -336,7 +424,7 @@ hr {
 
 .footer-company-container {
   width: 100%;
-  background-color: #222222;
+  background-color: #313131;
   color: white;
   padding: 2rem 4rem;
   font-size: 1.4rem;
@@ -391,6 +479,49 @@ hr {
 
 @media only screen and (max-width: 850px) {
 
+  .newsletter {
+    max-width: 470px;
+  }
+
+  .email-input-fields {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  input#firstName {
+    margin: 2rem 0;
+  }
+
+  .email-input-fields input {
+    height: 4rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #757575;
+    padding-left: .5rem;
+  }
+
+  .sign-up-button input[type=submit] {
+    color: #313131;
+    background-color: white;
+    float: right;
+    border: none;
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    clear: right;
+    float: none;
+  }
+
   .product-stage {
     display: block;
     max-width: 1000px;
@@ -435,6 +566,10 @@ hr {
 }
 
 @media only screen and (max-width: 740px) {
+
+  .header-logo, .header-main {
+    margin-bottom: 1rem;
+  }
 
   .featured-product {
     max-width: 470px;
@@ -546,10 +681,59 @@ hr {
 
 @media only screen and (max-width: 410px) {
 
+    .newsletter-container {
+      padding: 0;
+    }
+    .newsletter {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    .email-input-fields {
+      width: 100%;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    input#firstName {
+      margin: 2rem 0;
+    }
+
+    .email-input-fields input {
+      height: 4rem;
+      width: 100%;
+      max-width: 100%;
+      font-size: 2rem;
+      font-weight: 300;
+      color: #757575;
+      padding-left: .5rem;
+    }
+
+    .sign-up-button input[type=submit] {
+      color: #313131;
+      background-color: white;
+      float: right;
+      border: none;
+      height: 40px;
+      width: auto;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 0 1.5rem;
+      margin-top: 2rem;
+      clear: right;
+      float: none;
+    }
+
+
   .featured-product-container, .footer-links-container {
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
   }
 
   .product-stage-container, .product-stage {
@@ -624,11 +808,20 @@ hr {
   .card-button span {
     text-decoration: none;
   }
+
   .card-container-left, .card-container-right {
     border-radius: 0;
     padding: 4rem 0;
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
-    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+  }
+
+  .header-logo, .header-main {
+    margin-bottom: 2rem;
+  }
+
+  .header-sub h3 {
+    margin-bottom: 1rem;
   }
 }
