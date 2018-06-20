@@ -88,6 +88,23 @@ h4 {
   color: #3BA7C9;
 }
 
+/* link cover all - to be updated */
+a:link {
+    color:inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+}
+
 .clear-float {
   clear: left;
 }
