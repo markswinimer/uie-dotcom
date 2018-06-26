@@ -141,6 +141,7 @@ header {
 
 .header-sub {
   clear: left;
+  padding-top: .5rem;
   padding-left: 15.5rem;
 }
 
@@ -157,6 +158,7 @@ header {
 .header-nav p {
   padding-right: 1rem;
   color: white;
+  font-weight: bold;
   display: inline;
 }
 /* -------------------------------------------------- */
@@ -193,7 +195,7 @@ header {
 }
 
 .featured-left img {
-  height: 210px;
+  width: 210px;
   border-radius: 4px;
 }
 
