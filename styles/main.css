@@ -207,6 +207,13 @@ header {
   color: white;
   background-color: #8D0F23;
   display: inline-block;
+  transition: background-color ease 0.24s;
+}
+
+.featured-button:hover,
+.featured-button:active {
+  background-color: #b64445;
+  color: #fff;
 }
 /* -------------------------------------------------- */
 
@@ -303,7 +310,14 @@ header {
   text-align: center;
   line-height: 46px;
   border-radius: 0 0 4px 4px;
-  background-color: #8D0F23;
+  /* background-color: #8D0F23; */
+  background-color: #951a1d;
+  transition: background-color ease 0.24s;
+}
+
+.card-cta:hover,
+.card-cta:active {
+  background-color: #b64445;
 }
 
 .card-button {
