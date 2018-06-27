@@ -1,0 +1,22 @@
+.dev-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.bubble {
+  text-align: center;
+  cursor:pointer;
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin: 0 1.25rem;
+  border-radius: 4px;
+  color: white;
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,.5);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,.5);
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,.5);
+  opacity: .9;
+  background-color: #333333;
+}

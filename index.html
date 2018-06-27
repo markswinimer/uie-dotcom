@@ -4,14 +4,20 @@
   <meta charset="utf-8">
   <meta id="metaViewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1" />
   <title>UIE</title>
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
 
   <header>
     <!-- Header with logo -->
     <div class="header-container">
-
+      <div class="dev-menu">
+        <a href="./index.html"><div class="bubble">A</div></a>
+        <a href="./indexB.html"><div class="bubble">B</div></a>
+        <a href="./indexC.html"><div class="bubble">C</div></a>
+        <div onclick="toggleDev()" class="bubble">HIDE</div>
+      </div>
       <div class="header-logo">
         <img src="https://asset.uie.com/img/uie.png" alt="UIE"/>
       </div>
@@ -25,9 +31,9 @@
 
       <div class="header-sub">
         <h3>We provide the UX solutions you need to&nbsp;be&nbsp;successful</h3>
-        <h3>Consulting - Workshops - Video Seminars - Conferences</h3>
+        <h3 onclick="removeElement(this)">Consulting - Workshops - Video Seminars - Conferences</h3>
       </div>
-      <div class="header-nav">
+      <div onclick="removeElement(this)" class="header-nav">
         <p>Articles</p>
         <p>Podcasts</p>
         <p>About us</p>
@@ -292,5 +298,34 @@
 
   </footer>
 
+
+<script>
+
+  function removeElement(item) {
+    item.style.display = "none";
+  }
+
+  function toggleDev() {
+
+    let item = document.getElementsByClassName('bubble');
+    let x = item[3].innerHTML;
+
+    if (x == "HIDE") {
+      item[3].style.opacity = .075;
+      item[3].innerHTML = "SHOW";
+
+      item[0].style.display = "none";
+      item[1].style.display = "none";
+      item[2].style.display = "none";
+    } else {
+      item[3].style.opacity = 1;
+      item[3].innerHTML = "HIDE";
+
+      item[0].style.display = "block";
+      item[1].style.display = "block";
+      item[2].style.display = "block";
+    }
+  }
+</script>
 </body>
 </html>
