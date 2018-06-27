@@ -247,28 +247,40 @@ header {
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.35);
+  transition: .2s;
+}
+
+.card-container-left:hover, .card-container-right:hover{
+  -webkit-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.55);
+  box-shadow: 1px 1px 9px 0px rgba(0,0,0,0.55);
 }
 
 #card-1 {
   grid-column: 1 / 2;
   grid-row: 1;
 }
+
 #card-2 {
   grid-column: 3 / 4;
   grid-row: 1;
 }
+
 #card-3 {
   grid-column: 1 / 2;
   grid-row: 2;
 }
+
 #card-4 {
   grid-column: 3 / 4;
   grid-row: 2;
 }
+
 #card-5 {
   grid-column: 1 / 2;
   grid-row: 3;
 }
+
 #card-6 {
   grid-column: 3 / 4;
   grid-row: 3;
