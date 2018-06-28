@@ -173,7 +173,7 @@ header {
   background-image: url(https://asset.uie.com/uie-dot-com/playbook_light.png);
   background-size: cover ;
   background-position: center;
-  filter:brightness(120%) grayscale(150%);
+  /* filter:brightness(120%) grayscale(150%); */
   margin-bottom: 4rem;
 
 }
@@ -217,7 +217,7 @@ header {
   font-size: 1.9rem;
   margin-top: .5rem;
   line-height: 3.2rem;
-  padding: .2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: white;
   background-color: #951a1d;
