@@ -42,6 +42,12 @@ html {
   }
 } */
 
+/* p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 1.5rem;
+} */
 p {
   font-weight: 400;
   font-size: 2.1rem;
@@ -51,23 +57,21 @@ p {
 
 h1 {
   font-weight: 700;
-  font-size: 3.3rem;
-  line-height: 4rem;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
   letter-spacing: .05rem;
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 2.6rem;
-  line-height: 3.1rem;
+  font-weight: 700;
+  font-style: "Source Sans Pro", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
   margin-bottom: 0rem;
 }
 
 /* Larger Header for Featured Product */
-.featured-right h2 {
-  font-weight: 600;
-  font-size: 3.2rem;
-  line-height: 4.1rem;
+.featured-right h1 {
   margin-bottom: 1rem;
 }
 
@@ -83,9 +87,24 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.card-button span {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Blue color for title emphasis */
-.card-content h4, .featured-right h4 {
+.card-content h2, .subheader {
   color: #3BA7C9;
+  margin-bottom: 1rem;
+}
+.featured-right p {
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* link cover all - to be updated */
@@ -169,7 +188,7 @@ header {
   width: 100%;
   height: auto;
   background-color: white;
-  margin: 0rem 0;
+  margin: 2rem 0;
   padding: 7rem 4%;
 }
 
@@ -201,9 +220,9 @@ header {
 
 .featured-button {
   font-weight: 400;
-  font-size: 1.9rem;
-  margin-top: .5rem;
+  font-size: 2.1rem;
   line-height: 3.2rem;
+  margin-top: .5rem;
   padding: .2rem 2rem;
   border-radius: 4px;
   color: white;
@@ -289,7 +308,7 @@ header {
 .card-image {
   border-radius: 4px 4px 0 0;
   width: 100%;
-  max-height: 150px;
+  max-height: 180px;
   overflow: hidden;
 }
 .card-image img {
@@ -303,7 +322,9 @@ header {
 }
 
 .card-callout {
-  min-height: 10.5rem;
+  height: 100%;
+  max-height: 10.5rem;
+  flex: auto;
   padding-top: 1.5rem;
   background-color: #ffffff;
 }
@@ -320,34 +341,32 @@ header {
 }
 
 .card-cta {
-  height: 46px;
   width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  margin-bottom: 3rem;
   text-align: center;
   line-height: 46px;
-  border-radius: 0 0 4px 4px;
   /* background-color: #951a1d; */
-  background-color: #951a1d;
-  transition: background-color ease 0.24s;
 }
 
-.card-cta:hover,
-.card-cta:active {
+.card-button:hover,
+.card-button:active {
   background-color: #b64445;
 }
 
 .card-button {
   color: #ffffff;
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 4px 4px 4px 4px;
+  background-color: #951a1d;
   text-decoration: none;
   padding: .2rem 0;
+  transition: background-color ease 0.24s;
 }
 
-.card-button span {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  border-radius: .5rem;
-}
+
 /* -------------------------------------------------- */
 
 /* Newsletter */
