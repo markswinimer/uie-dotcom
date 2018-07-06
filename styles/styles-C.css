@@ -191,15 +191,17 @@ header {
   padding: 15rem 0rem 5rem 0rem;
 }
 .featured-product h2 {
-  font-size: 4.2rem;
+  font-size: 3.8rem;
   line-height: 5rem;
-  color: white;
+  color: #222222;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 .featured-product h4 {
-  font-size: 4rem;
+  font-weight: 700;
+  font-size: 3.8  rem;
   line-height: 5rem;
-  color: white;
+  color: #222222;
   margin-bottom: 2rem;
 }
 
