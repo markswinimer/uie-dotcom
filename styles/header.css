@@ -1,0 +1,122 @@
+header {
+  padding: 0;
+}
+
+.header {
+  background-color: #951a1d;
+  padding: 0.75em 0 0.25em;
+  color: #fff;
+}
+
+.header .page {
+  padding-top: 6px;
+  padding-bottom: 15px;
+}
+
+.page {
+    max-width: 1050px;
+    width: auto;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+header h1 {
+    font-family: "Source Sans Pro", "Univers LT W01 65 Bold", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+header h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+header .logo {
+    width: 200px;
+    display: block;
+}
+header a {
+    color: #a73e3f;
+    text-decoration: none;
+    -webkit-transition: color 0.24s ease;
+    -moz-transition: color 0.24s ease;
+    transition: color 0.24s ease;
+}
+
+.menu-toggle {
+    -webkit-transition: background-color 0.24s ease;
+    -moz-transition: background-color 0.24s ease;
+    transition: background-color 0.24s ease;
+    color: #e9cacc;
+    font-size: 1em;
+    float: right;
+    display: none;
+    padding: 0.5em 1em 0.4em;
+    margin-top: 0.5em;
+    background-color: #aa3033;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container:before, .container:after, .row:before, .row:after, .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.container:after, .row:after, .clearfix:after {
+    clear: both;
+}
+.container:before, .container:after, .row:before, .row:after, .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+
+header .nav a:first-child {
+    border-left: 1px solid #951a1d;
+}
+header .nav a {
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin: 0;
+    border-right: 1px solid #951a1d;
+    padding: 1rem 1.5rem 1rem;
+    float: left;
+    -webkit-transition: background-color 0.24s ease;
+    -moz-transition: background-color 0.24s ease;
+    transition: background-color 0.24s ease;
+}
+
+header .nav a:hover {
+  background-color: #b64445;
+  color: #fff;
+}
+
+header a:link {
+    color: white;
+    text-decoration: none;
+
+}
+
+header a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header .nav {
+    background-color: #aa3033;
+    font-size: 1.7rem;
+}
