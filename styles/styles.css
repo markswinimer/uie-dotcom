@@ -133,46 +133,35 @@ a:active {
 
 /* Featured Product */
 
+
+
+
 .featured-product-container {
+  color: white;
   width: 100%;
-  height: auto;
-  background-color: white;
-  margin: 2rem 0;
-  padding: 7rem 4%;
+  min-height: 450px;
+  max-height: 450px;
+  background-image: url(https://asset.uie.com/uie/assets/images/playbook_hero_wall.jpg);
+  background-size: cover ;
+  background-position: center;
+  margin-bottom: 1.25rem;
+  padding: 12rem 0;
 }
 
 .featured-product {
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 0 0rem;
-  display: flex;
-  flex-direction: row;
 }
 
 
-.featured-left {
-  width: 95%;
-  height: 225px;
-  overflow: hidden;
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  border-radius: 4px;
-}
-
-.featured-left img {
-  height: 225px;
-}
-
-.featured-right {
-  min-width: 250px;
-  padding-left: 3rem;
-  padding: 0 4rem;
-  flex-grow:1;
-}
-
+/* Disabled top for testing */
+/* .featured-product-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 7rem 4%;
+} */
 
 
 .featured-button {
@@ -180,10 +169,10 @@ a:active {
   font-size: 2.1rem;
   line-height: 3.2rem;
   margin-top: .5rem;
-  padding: .2rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: white;
-  background-color: #951a1d;
+  background-color: #a73e3f;
   display: inline-block;
   transition: background-color ease 0.24s;
 }
@@ -192,6 +181,23 @@ a:active {
 .featured-button:active {
   background-color: #b64445;
   color: #fff;
+}
+
+
+
+.featured-product h2 {
+  color: #222222;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+}
+.featured-product h4 {
+  color: #222222;
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-style: "Source Sans Pro", sans-serif;
 }
 /* -------------------------------------------------- */
 
@@ -203,7 +209,7 @@ a:active {
 
 .product-stage {
   display: grid;
-  max-width: 1000px;
+  max-width: 950px;
   margin: auto;
   grid-gap: 4rem;
   grid-template-columns: minmax(325px, 500px) minmax(325px, 500px);
@@ -234,7 +240,7 @@ a:active {
 .card-image {
   border-radius: 4px 4px 0 0;
   width: 100%;
-  max-height: 180px;
+  max-height: 170px;
   overflow: hidden;
   display:flex;
   align-items: flex-start;
@@ -243,8 +249,6 @@ a:active {
 }
 
 .card-image img {
-  filter: contrast(85%);
-  filter: saturate(55%);
   width: 100%;
 }
 
@@ -268,7 +272,7 @@ a:active {
   color: #3BA7C9;
 }
 .card-body h2 a:hover, .subheader:hover {
-  filter:saturate(150%);
+  image:saturate(150%);
   color: #3492B5;
 }
 
@@ -306,7 +310,7 @@ a:active {
   padding: 0 4%;
 }
 .newsletter {
-  max-width: 100rem;
+  max-width: 95rem;
   margin: auto;
   height: auto;
   border-radius: 4px;
@@ -385,7 +389,7 @@ input#firstName {
   background-color: white;
   margin: auto;
   height: auto;
-  max-width: 1000px;
+  max-width: 950px;
   white-space: nowrap;
 }
 
@@ -430,10 +434,18 @@ hr {
 }
 
 .footer-company {
-  max-width: 1000px;
+  max-width: 950px;
+  height: 100%;
   margin: auto;
   color: white;
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
   white-space: nowrap;
+}
+
+.footer-logo {
+  margin-right: 3rem;
 }
 
 .footer-company-middle, .footer-company-right {
@@ -521,7 +533,7 @@ hr {
 
   .product-stage {
     display: block;
-    max-width: 1000px;
+    max-width: 950px;
     padding: 4rem 0;
     max-width: 470px;
     grid-row-gap: 0;

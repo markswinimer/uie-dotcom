@@ -4,7 +4,7 @@ header {
 
 .header {
   background-color: #951a1d;
-  padding: 0.75em 0 0.25em;
+  padding: 1.5em 0 0.75em;
   color: #fff;
 }
 
@@ -14,16 +14,24 @@ header {
 }
 
 .page {
-    max-width: 1050px;
+    max-width: 950px;
     width: auto;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
 }
 
 .header h1 {
     font-size: 2.5em;
     margin: 0;
+    margin-right: 2rem;
+}
+.header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 3rem;
+    line-height: 2rem;
 }
 header h1 {
     font-family: "Source Sans Pro", "Univers LT W01 65 Bold", "Helvetica Neue", Arial, sans-serif;
@@ -43,7 +51,7 @@ header h1 {
 }
 
 header .logo {
-    width: 200px;
+    max-width: 105px;
     display: block;
 }
 header a {
@@ -119,4 +127,9 @@ header a:-webkit-any-link {
 header .nav {
     background-color: #aa3033;
     font-size: 1.7rem;
+}
+.tagline {
+  position: absolute;
+  right: 43rem;
+  top: 4.25rem;
 }
